@@ -3,7 +3,7 @@
 
  ![image](https://github.com/bilibilifmk/ROG_fan/blob/master/img/%E5%B0%81%E9%9D%A2.JPG)  
 
-# pcb工程请跳转至立创：https://github.com/bilibilifmk/ROG_fan/blob/master/img/%E5%B0%81%E9%9D%A2.JPG
+# pcb工程请跳转至立创：https://oshwhub.com/hbk444/rog-jian-rong-feng-shan
 
 
 ### 材料清单：  
