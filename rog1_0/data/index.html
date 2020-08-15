@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rog兼容风扇下位机</title>
+    <style>
+        body{text-align:center} 
+        h1{
+          color:#ff8eb3;
+       text-align:center;
+    font-size: 30px;
+    
+        }
+        h2{
+          color:green;
+          font-size: 30px;
+    
+    
+        }
+        span{
+            color:#ff8eb3;
+          font-size: 75px;
+    
+    
+        }
+       
+    
+            .af {
+               
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+               
+                margin: 20px;
+                text-align: center;
+                font-size: 25px;
+                color: #fff;
+                background: #ff8eb3;
+              
+                
+            }
+            /*.af:hover{
+                opacity: 0.8;
+            }*/
+            .title {
+                font-size: 60px;
+                color: #ff8eb3;
+                margin-bottom: 30px;
+            }
+    
+            input {
+               
+                font-size: 25px;
+                margin-top: 25px;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: 3px solid #ff8eb3;
+                color: #ff8eb3;
+            }
+      #touch {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        left: 300px;
+        top: 79px;
+        margin-left: -30px;
+        margin-top: -30px;
+        z-index: 999999;
+    }
+    
+    
+    
+    
+    #simple-menu {
+        width: 60px;
+        height: 60px;
+        cursor: move;
+    }
+      </style>
+      <style lang="scss" scoped>
+    
+        .wave-mask {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            top: 10px;
+            left: 55%;
+            border-radius: 40%;
+            background-color: rgba(212, 24, 24, 0.9);
+            transform: translate(-50%, -70%) rotate(0);
+            animation: toRotate 10s linear -5s infinite;
+            z-index: 20;
+        }
+    
+        @keyframes toRotate {
+            50% {
+                transform: translate(-50%, -70%) rotate(180deg);
+            }
+    
+            100% {
+                transform: translate(-50%, -70%) rotate(360deg);
+            }
+        }
+    
+        .container {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #67c23a;
+            background: #ffffff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 5px;
+        }
+    
+        .wave {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-image: linear-gradient(-180deg, #aaff80 13%, #67c23a 91%);
+            border-radius: 50%;
+        }
+    
+        .container {
+            overflow: hidden;
+        }
+    
+        .wave-mask {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <h1>ROG兼容风扇后台</h1>
+    <p></p>
+    <a class="af" href="/rog" download="rog兼容风扇.apk">点击下载APP</a>
+ <p></p>
+    <input type="text" id="sr"  placeholder="设置上电默认转速0-255">
+    <p></p>
+   
+    <input class="af" type="button" value="保存" onclick="opera()">
+   
+   <h1>v1.0.5 更多功能敬请期待 by：发明控</h1>
+
+    
+
+
+
+</body>
+<script>
+    function opera() {
+   ws(document.getElementById("sr").value ) ;
+ 
+}
+
+function ws(n) {
+  
+  if(n!=""&&n>=0&&n<=255){
+
+    var xmlhttp;
+ if (window.XMLHttpRequest) {
+     xmlhttp = new XMLHttpRequest();
+ }
+ xmlhttp.onreadystatechange = function () {
+
+    if ( xmlhttp.status == 200){
+                           
+
+        alert("设置成功");             
+                        
+
+       }
+
+ }
+ xmlhttp.open("GET", "/f?f="+n );
+ xmlhttp.send();
+
+  }else{
+
+    alert("请输入正确的值！");
+
+  }
+
+
+  
+  
+   
+}
+
+
+
+</script>
+
+</html>
