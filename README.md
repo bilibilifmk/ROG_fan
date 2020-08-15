@@ -21,7 +21,8 @@
 ## 风扇的选择：
  我使用的型号为：hy45q-05a理论上笔记本风扇都可以兼容
  ![image](https://github.com/bilibilifmk/ROG_fan/blob/master/img/%E9%A3%8E%E6%89%87.jpg)  
- 
+## 引出ch340的d+ d-
+  ![image](https://github.com/bilibilifmk/ROG_fan/blob/master/img/%E4%B8%BB%E6%9D%BF.jpg)  
 ## usb公口
  需要引出v+ v- d+ d- cc其中cc可将买的的工口上面的电阻拆掉引出cc（引出cc主要为了充电 ）
  ![image](https://github.com/bilibilifmk/ROG_fan/blob/master/img/pcb.png)  
