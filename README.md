@@ -1,5 +1,5 @@
 # ROGphone 二代三代兼容风扇 
-# 视频：
+# 视频： https://www.bilibili.com/video/BV11f4y1976N/
 
  ![image](https://github.com/bilibilifmk/ROG_fan/blob/master/img/%E5%B0%81%E9%9D%A2.JPG)  
 
