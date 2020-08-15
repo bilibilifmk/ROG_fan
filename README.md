@@ -32,4 +32,5 @@
 
 ## 固件烧录：
 可在发行页面下载到编译好的二进制固件  
+https://github.com/bilibilifmk/ROG_fan/releases
 容量选择 32mbit  
